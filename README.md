@@ -7,3 +7,8 @@ This is a simple Sinatra web application that analyzes text input using **bigram
 - Computes cosine similarity with English bigram probabilities  
 - Fetches an emoji icon based on similarity score  
 - Displays results in a simple web interface  
+
+## Setup
+- get an **IconFinder API Key** 
+- run bundle install 
+- run bin/server
