@@ -1,0 +1,16 @@
+<h1>Bigram Analysis Tool!</h1>
+
+  <form action="/results" method="get">
+    <label for="user_input">Text to be analyzed:</label>
+    <textarea id="user_input" name="user_input" rows="4" cols="50"></textarea>
+    <button type="submit">Analyze!</button>
+  </form>
+
+  <div class="info-section">
+    <h2>What is Bigram Analysis?</h2>
+    <p>
+      A bigram is an association, or combination, of 2 characters. Bigram analysis is the process of analyzing these pairs of characters within a given text. This analysis is useful in cryptography. By identifying common letter pairs you can decipher simple substitution ciphers.
+    </p>
+    <p>
+      In this tool we also compare the frequency of bigrams in your input against the frequency of bigrams in common english, and assign a score between 0 and 1. A score close to 1 means the bigram frequency is very close to common english. A score close to 0 means the bigram frequency is very obscure, random, or dissimiliar to english. 
+  </div>

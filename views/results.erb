@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="similarity-section">
+    <h2>Similarity to English Distribution</h2>
+    <p class="similarity-score"><%= @similarity_score.round(4) %></p>
+     <% if @icon_url %>
+      <img src="<%= @icon_url %>" alt="Emoji" style="width: 100px; height: 100px;">
+    <% else %>
+      <p>No icon found</p>
+    <% end %>
+  </div>
+
+  <h2>Bigrams Frequency</h2>
+  <ul class="bigram-list">
+    <% @sorted_frequency.each do |bigram, count| %>
+      <li class="bigram-item">
+        <span><%= bigram %></span> <span><%= count %></span>
+      </li>
+    <% end %>
+  </ul>
+</div>
