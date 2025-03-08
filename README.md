@@ -1,4 +1,4 @@
-# Sinatra Bigram Similarity Analyzer  
+# Bigram Analysis  
 
 This is a simple Sinatra web application that analyzes text input using **bigram frequency analysis** and **cosine similarity** to compare it to typical English text. Based on the similarity score, it fetches an appropriate emoji icon from the IconFinder API.  
 
